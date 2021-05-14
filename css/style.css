@@ -330,7 +330,7 @@ h6 {
     padding: 7em 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     #qbootstrap-couple,
     #qbootstrap-countdown,
     #qbootstrap-groom-bride,
@@ -341,7 +341,7 @@ h6 {
     #qbootstrap-gallery,
     #qbootstrap-testimonials,
     #qbootstrap-press {
-        padding: 5em 0;
+        padding: 2em 0;
     }
 }
 
@@ -359,7 +359,14 @@ h6 {
 @media screen and (max-width: 768px) {
     .qbootstrap-cover,
     .qbootstrap-hero {
-        height: 700px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .qbootstrap-cover,
+    .qbootstrap-hero {
+        height: 1200px;
     }
 }
 
@@ -384,7 +391,7 @@ h6 {
 @media screen and (max-width: 768px) {
     .qbootstrap-cover,
     .video-hero {
-        heifght: inherit;
+        height: inherit;
         padding: 3em 0;
     }
 }
@@ -401,7 +408,7 @@ h6 {
 @media screen and (max-width: 768px) {
     .qbootstrap-cover .display-t,
     .video-hero .display-t {
-        height: 600px;
+        height: 200px;
     }
 }
 
@@ -789,12 +796,11 @@ h6 {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.4);
 }
 
 #qbootstrap-countdown .countdown {
     margin-bottom: 0;
-    font-size: 80px;
+    font-size: 50px;
     color: #fff;
 }
 
