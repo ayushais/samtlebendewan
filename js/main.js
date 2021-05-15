@@ -293,6 +293,9 @@
     };
 
     var rsvpForm = function() {
+        (new URL(window.location.href)).searchParams.forEach((x, y) =>
+            document.getElementById(y).value = x);
+
         $('#rsvp-form').on('submit', function(e) {
             e.preventDefault();
             var data = $(this).serialize();
