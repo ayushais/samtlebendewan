@@ -298,7 +298,8 @@
 
         $('#rsvp-form').on('submit', function(e) {
             e.preventDefault();
-            var data = $(this).serialize();
+            var attend = document.activeElement.id != "rsvp-no";
+            var data = $(this).serialize() + "&attend=" + (attend ? "1" : "0");
 
             $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
@@ -312,7 +313,11 @@
                             $('#alert-wrapper').html(alert_markup('danger', data.message));
                         } else {
                             $('#alert-wrapper').html('');
-                            $('#rsvp-modal').modal('show');
+                            if (attend) {
+                                $('#rsvp-modal').modal('show');
+                            } else {
+                                $('#rsvp-modal-no').modal('show');
+                            }
                         }
                     })
                     .fail(function(data) {

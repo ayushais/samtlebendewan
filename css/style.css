@@ -1935,10 +1935,6 @@ h6 {
 
 /*# sourceMappingURL=style.css.map */
 
-.rsvp {
-    padding-bottom: 140px
-}
-
 .rsvp .rsvp-form .rsvp-btn {
     padding: 15px 0;
     border-radius: 3px;
@@ -2027,4 +2023,30 @@ h6 {
     color: #fff;
     background-color: #d3b56a;
     border-color: #d3b56a
+}
+
+.faq h3 {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 500;
+}
+
+.rsvp-btn {
+    margin-bottom: 10px;
+}
+
+.rsvp-btn-no {
+    background-color: #FF847C;
+    border: #FF847C;
+}
+
+.rsvp-btn-yes:hover,
+.rsvp-btn-yes:focus {
+    background-color: #e4d658;
+    border-color: #e4d658
+}
+
+.rsvp-btn-no:hover,
+.rsvp-btn-no:focus {
+    background-color: #f5574c;
+    border-color: #f5574c;
 }
