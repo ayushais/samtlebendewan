@@ -303,7 +303,7 @@
 
             $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-            if ($('#invite_code').val() !== '230099') {
+            if (MD5($('#invite_code').val()) !== '5199f64ff3e313b3369d1bf06140888e') {
                 $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
             } else {
                 $.post('https://script.google.com/macros/s/AKfycbwpnMaoRbRNPMOMbwzPzks5cwd_ZCSastaRapvQOpJX9joTKEUsYcZytCHuxMYIjJxu/exec', data)
